@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <div>
+            <ul class="stage">
+                <li><span><i class="fa fa-check" aria-hidden="true"></i></span></li>
+                <li>Shipping</li>
+                <li><span>2</span></li>
+                <li>Payment</li>
+                <li><span>3</span></li>
+                <li>Confirmation</li>
+            </ul>
+        </div>
+        <div class="payment">
+            <h1>Payment details</h1>
+            <!-- <hr> -->
+            <div class="container">
+                <div class="contain">
+                    <div class="outer">
+                        <div class="box">
+                            <i class="fa fa-credit-card fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <p>Credit Card</p>
+                    </div>
+                    <div class="outer">
+                        <div class="box">
+                            <i class="fa fa-credit-card fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <p>Pay Pal</p>
+                    </div>                
+                    <div class="outer">
+                        <div class="box">
+                            <i class="fa fa-credit-card fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <p>Bit Coin</p>
+                    </div>
+                    <div class="outer">
+                        <div class="box">
+                            <i class="fa fa-credit-card fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <p>Offline Checkout</p>
+                    </div>
+                </div>
+            </div>
+            <h2>Credit card information</h2>
+                <div class="name">
+                    <label for="name">Name on card</label><br>
+                    <input type="text" id="name">
+                </div>  
+                <div class="number">
+                    <label for="number">Credit card number</label><br>
+                    <input type="tel" id="number">
+                    <br>
+                    <p class="alert">*此欄位填寫不正確</p>
+                </div>
+                <div class="cards">
+                    <p>Accepted cards</p>
+                    <ul>
+                        <li><img src="img/visa.png" alt="visa card"></li>
+                        <li><img src="img/master.png" alt="master card"></li>
+                        <li><img src="img/express.png" alt="american express"></li>
+                        <li><img src="img/discover.png" alt="discover card"></li>
+                    </ul>
+                </div>
+            <div class="card-num">
+                <label for="securitycode" class="security">Security code<span id="info">?</span></label>
+                <label for="month" id="expiration">Expiration date</label>
+                <div class="hint">
+                    <div class="scode">信用卡背面三碼數字</div>
+                    <div class="pointer"></div>
+                </div>
+                
+                <br>
+                <input type="tel" id="securitycode" maxlength="3">
+                <select name="expiration-m" id="month">
+                    <option value="" disabled selected style="color:#dfe7ec">Month</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                </select>   
+                <select name="expiration-y" id="year">
+                    <!-- <option value="" disabled selected style="color:#dfe7ec">Year</option> -->
+                </select>   
+            </div>
+        </div>
+        <div class="billing">
+            <h2>Billing information<a href="#" class="open"><i class="fa fa-plus-square" aria-hidden="true"></i> 展開</a></h2>
+            <div class="detail">
+                <label for="first-name">First name</label><br>
+                <input type="text" id="first-name"><br>
+                <label for="second-name">Second name</label><br>
+                <input type="text" id="second-name"><br>
+                <label for="address">Billing address</label><br>
+                <input type="text" id="address"><br>
+                <label for="city">City</label><br>
+                <input type="text" id="city"><br>
+                <label for="zip">Zip</label>
+                <label for="country" class="country">Country</label><br>
+                <input type="text" id="zip"><input type="text" id="country">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="terms">
+            <input type="checkbox" class="checkbox">
+            <p>By checking this box, I agree to the <a href="#">Terms & Conditions</a> & <a href="#">Privacy Policy</a></p>
+        </div>
+        <div class="btn">
+            <button>Submit Payment</button>
+        </div>
+    </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/all.js"></script>
+</body>
+</html>
